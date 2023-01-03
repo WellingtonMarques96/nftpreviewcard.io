@@ -1,0 +1,19 @@
+/* -- Global -- */
+
+body {
+  margin: 0px;
+  background-color: hsl(217, 54%, 11%);
+}
+main {
+  background-color: hsl(216, 50%, 16%);
+}
+
+h1,
+p {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
