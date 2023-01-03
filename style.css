@@ -1,8 +1,9 @@
 /* -- Global -- */
 
 body {
-  margin: 0px;
+  margin: 0rem;
   background-color: hsl(217, 54%, 11%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 main {
   background-color: hsl(216, 50%, 16%);
@@ -16,4 +17,110 @@ p {
 img {
   max-width: 100%;
   display: block;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  max-width: 20rem;
+  max-height: 40rem;
+  margin-inline: auto;
+  margin-block: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+/* -- card -- */
+
+.card {
+  display: grid;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.card img {
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.view {
+  display: none;
+  position: absolute;
+  top: 130px;
+  left: 140px;
+}
+
+.card img:hover {
+  display: block;
+}
+
+.card h1 {
+  font-size: 1.6rem;
+  font-weight: 600px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.card p,
+.details span {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.details::after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 1px;
+  background-color: hsl(215, 51%, 20%);
+  position: absolute;
+  bottom: -30px;
+}
+
+.ethereum span {
+  font-weight: bold;
+}
+
+.details .clock,
+.details .ethereum {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.details .ethereum span {
+  color: hsl(178, 100%, 50%);
+}
+
+.avatar {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.avatar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.avatar a:hover,
+.card h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.avatar img {
+  border-radius: 50%;
+  border: solid 1px white;
 }
