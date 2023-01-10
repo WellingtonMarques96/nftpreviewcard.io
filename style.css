@@ -20,6 +20,7 @@ img {
 }
 
 .container {
+  box-sizing: border-box;
   display: grid;
   place-items: center;
   max-width: 20rem;
@@ -123,4 +124,23 @@ img {
 .avatar img {
   border-radius: 50%;
   border: solid 1px white;
+}
+
+@media (max-width: 30rem) {
+  .container {
+    max-width: 17rem;
+    place-content: center;
+  }
+  .avatar p {
+    font-size: 0.88rem;
+  }
+  .details span {
+    font-size: 1rem;
+  }
+  .card h1 {
+    font-size: 1.3rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
 }
